@@ -14,7 +14,8 @@ export default function App() {
     setHealthValue(Math.round(calcHealth * 24))
     setTotalAssets(4250000 + calcHealth * 24)
     setTodayChange(8200)
-  }, [sleepHours])
+    }
+  , [sleepHours])
 
   const tabs = ["時間", "スキル", "人間関係", "体験", "健康"]
 
@@ -26,7 +27,7 @@ export default function App() {
       </header>
 
       <div className="p-6 text-center">
-        <h2 className="text-xl text-gray-600">総資産額</h2>
+        <h2 className="text-xl text-gray-600">総資産額</h3>
         <p className="text-5xl font-bold text-green-600">¥{totalAssets.toLocaleString()}</p>
         <p className="text-green-600 text-xl mt-2">今日: +¥{todayChange.toLocaleString()}</p>
 
